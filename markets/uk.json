@@ -1,0 +1,20 @@
+{
+  "market": "uk",
+  "currency": "USD",
+  "settlement_note": "TikTok 结算币种统一为美元，定价与成本一律用 USD 计",
+  "language": "en-GB",
+  "units": "metric_first",
+  "number_locale": "us",
+  "title": {
+    "max_chars": 90,
+    "source": "卖家确认 2026-11-05"
+  },
+  "restricted": {
+    "banned_categories": [],
+    "certifications": [
+      "UKCA",
+      "CE"
+    ],
+    "source": null
+  }
+}

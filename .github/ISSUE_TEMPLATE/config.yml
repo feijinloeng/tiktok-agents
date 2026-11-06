@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/feijinloeng/tiktok-agents/security/advisories/new
+    about: Report a vulnerability privately. Do not open a public issue.
+  - name: Read the runbook first
+    url: https://github.com/feijinloeng/tiktok-agents/blob/main/runbook.md
+    about: Inputs, commands and stop conditions for every stage.

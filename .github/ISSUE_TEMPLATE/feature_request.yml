@@ -1,0 +1,41 @@
+name: Feature request
+description: Propose a new market, stage or deterministic check
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What can't you do today, or what output is currently wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Which layer does it belong to — `markets/`, `core/`, a script, a prompt, or a template?
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Layer
+      options:
+        - markets/ (platform numbers)
+        - core/ (rules or contracts)
+        - scripts/ (deterministic arithmetic)
+        - prompts/ (model judgement)
+        - templates/ (input)
+        - docs / CI
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I checked that no existing stage already covers this
+          required: true
+        - label: This does not require guessing an unverified platform number
+          required: true

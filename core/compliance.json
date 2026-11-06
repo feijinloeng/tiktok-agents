@@ -1,0 +1,55 @@
+{
+  "_note": "内容合规禁词库。compliance_scan.py 从这里读；改规则只改这一个文件，不要再往 prompt 里抄副本。",
+  "_updated": "2026-11-03",
+  "banned": {
+    "absolute": {
+      "reason": "绝对化用语：无法举证，TikTok 与各国广告法均不接受",
+      "terms": [
+        "best", "the best", "#1", "number one", "no.1", "world's best",
+        "perfect", "100%", "guaranteed", "unbeatable", "undeniable",
+        "most powerful", "strongest", "fastest", "cheapest", "ultimate",
+        "never fails", "indestructible", "miracle", "instant results"
+      ]
+    },
+    "price_promo_in_title": {
+      "reason": "促销信息不进标题：平台标题禁项，且容易与实时价格不一致",
+      "terms": [
+        "free shipping", "free delivery", "sale", "discount", "off",
+        "clearance", "flash sale", "best price", "cheap", "buy 1 get 1",
+        "limited time", "today only", "hot sale"
+      ]
+    },
+    "health_claims": {
+      "reason": "医疗/功效宣称：需注册资质，无资质即违规",
+      "terms": [
+        "cure", "cures", "treat", "treats", "heal", "heals", "prevent disease",
+        "anti-bacterial", "sterilize", "medical grade", "clinically proven",
+        "lose weight", "fat burning", "detox", "pain relief", "therapy"
+      ]
+    },
+    "safety_overclaim": {
+      "reason": "安全承诺：绝对安全无法举证，出事即责任",
+      "terms": [
+        "100% safe", "completely safe", "no risk", "zero risk", "child safe",
+        "fireproof", "waterproof", "unbreakable", "shockproof"
+      ]
+    },
+    "fake_proof": {
+      "reason": "伪造证明：认证、销量、评价、官方授权都不得虚构",
+      "terms": [
+        "official store", "authorized reseller", "as seen on tv",
+        "fda approved", "ce certified", "ul listed", "fcc certified",
+        "verified by", "award winning"
+      ]
+    },
+    "before_after": {
+      "reason": "前后对比：TikTok 对减肥/美容/健康类前后对比限制严格，非该类目也应避免暗示效果",
+      "terms": ["before and after", "before/after", "transformation", "results in days"]
+    }
+  },
+  "notes": {
+    "ai_disclosure": "AI 生成或显著编辑的画面/配音，发布时须用平台原生标注，不得去除平台加的水印或 AI 标识。",
+    "affiliate_disclosure": "达人/联盟内容必须按平台规则披露商业合作关系。",
+    "superlative_exception": "唯一可用的量化表达：给具体数值 + 可复核的测试条件（例：'45 W output, charges a 4000 mAh phone to 60% in 30 min'）。"
+  }
+}

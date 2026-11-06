@@ -1,0 +1,19 @@
+{
+  "market": "id",
+  "currency": "USD",
+  "settlement_note": "TikTok 结算币种统一为美元，定价与成本一律用 USD 计",
+  "language": "id-ID",
+  "units": "metric",
+  "number_locale": "eu",
+  "title": {
+    "max_chars": 90,
+    "source": "卖家确认 2026-11-05"
+  },
+  "restricted": {
+    "banned_categories": [],
+    "certifications": [
+      "SNI"
+    ],
+    "source": null
+  }
+}

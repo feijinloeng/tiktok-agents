@@ -1,0 +1,30 @@
+# 凭据与隐私
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+credentials/
+
+# 业务数据（真实导出不入库）
+*.csv
+!tests/fixtures/*.csv
+
+# 生成物
+output/
+dist/
+*.log
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

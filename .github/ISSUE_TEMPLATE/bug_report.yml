@@ -1,0 +1,42 @@
+name: Bug report
+description: A script, config or CI check behaves incorrectly
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do **not** paste API keys, real exports, buyer data or supplier quotes.
+        Use the synthetic fixtures in `tests/fixtures/` for reproduction.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Command, expected output and actual output.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: A command that only uses files in this repository.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "3.11.9"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I ran `make test`
+          required: true
+        - label: I did not include secrets or real business data
+          required: true

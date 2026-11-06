@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="TikTok Agent — a 7-stage TikTok Shop operating toolkit">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080D1A"/>
+      <stop offset="0.55" stop-color="#0B1426"/>
+      <stop offset="1" stop-color="#101B31"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#25F4EE"/>
+      <stop offset="1" stop-color="#FE2C55"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#25F4EE" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#25F4EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRed" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FE2C55" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FE2C55" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#18243C" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#grid)" opacity="0.55"/>
+  <ellipse cx="180" cy="60" rx="340" ry="220" fill="url(#glowCyan)"/>
+  <ellipse cx="1120" cy="330" rx="360" ry="240" fill="url(#glowRed)"/>
+
+  <!-- left: identity -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="64" y="92" font-size="14" font-weight="700" letter-spacing="4" fill="#25F4EE">OPEN SOURCE · AGENT ENGINEERING</text>
+    <text x="62" y="172" font-size="66" font-weight="800" fill="#F2F6FF">TikTok Agent</text>
+    <text x="64" y="214" font-size="24" font-weight="500" fill="#C7D3E6">7-stage TikTok Shop operating toolkit</text>
+    <text x="64" y="248" font-size="17" fill="#8A9AB5">deterministic scripts × model judgement × 5 markets</text>
+
+    <g font-size="13" font-weight="600">
+      <rect x="64" y="286" width="168" height="32" rx="16" fill="#101B31" stroke="#243252"/>
+      <text x="80" y="307" fill="#A9C7FF">9 zero-dep scripts</text>
+
+      <rect x="244" y="286" width="112" height="32" rx="16" fill="#101B31" stroke="#243252"/>
+      <text x="260" y="307" fill="#A9C7FF">22 prompts</text>
+
+      <rect x="368" y="286" width="168" height="32" rx="16" fill="#101B31" stroke="#243252"/>
+      <text x="384" y="307" fill="#A9C7FF">10 assertion groups</text>
+
+      <rect x="548" y="286" width="104" height="32" rx="16" fill="#101B31" stroke="#243252"/>
+      <text x="564" y="307" fill="#A9C7FF">MIT · CI</text>
+    </g>
+  </g>
+
+  <!-- right: stage grid -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <!-- row 1 -->
+    <g>
+      <rect x="660" y="70" width="112" height="98" rx="14" fill="#111A2E" stroke="#243252"/>
+      <text x="678" y="104" font-size="20" font-weight="700" fill="#25F4EE">01</text>
+      <text x="678" y="132" font-size="12" font-weight="700" letter-spacing="1.2" fill="#D7E2F3">MARKET</text>
+      <text x="678" y="150" font-size="10.5" fill="#6E809E">research</text>
+    </g>
+    <g>
+      <rect x="786" y="70" width="112" height="98" rx="14" fill="#111A2E" stroke="#243252"/>
+      <text x="804" y="104" font-size="20" font-weight="700" fill="#25F4EE">02</text>
+      <text x="804" y="132" font-size="12" font-weight="700" letter-spacing="1.2" fill="#D7E2F3">PRICING</text>
+      <text x="804" y="150" font-size="10.5" fill="#6E809E">strategy</text>
+    </g>
+    <g>
+      <rect x="912" y="70" width="112" height="98" rx="14" fill="#111A2E" stroke="#243252"/>
+      <text x="930" y="104" font-size="20" font-weight="700" fill="#25F4EE">03</text>
+      <text x="930" y="132" font-size="12" font-weight="700" letter-spacing="1.2" fill="#D7E2F3">LISTING</text>
+      <text x="930" y="150" font-size="10.5" fill="#6E809E">compliance</text>
+    </g>
+    <g>
+      <rect x="1038" y="70" width="112" height="98" rx="14" fill="#111A2E" stroke="#243252"/>
+      <text x="1056" y="104" font-size="20" font-weight="700" fill="#25F4EE">04</text>
+      <text x="1056" y="132" font-size="12" font-weight="700" letter-spacing="1.2" fill="#D7E2F3">IMAGES</text>
+      <text x="1056" y="150" font-size="10.5" fill="#6E809E">8 slots</text>
+    </g>
+
+    <!-- row 2 -->
+    <g>
+      <rect x="660" y="182" width="112" height="98" rx="14" fill="#111A2E" stroke="#243252"/>
+      <text x="678" y="216" font-size="20" font-weight="700" fill="#25F4EE">05</text>
+      <text x="678" y="244" font-size="12" font-weight="700" letter-spacing="1.2" fill="#D7E2F3">VIDEO</text>
+      <text x="678" y="262" font-size="10.5" fill="#6E809E">storyboard</text>
+    </g>
+    <g>
+      <rect x="786" y="182" width="112" height="98" rx="14" fill="#111A2E" stroke="#243252"/>
+      <text x="804" y="216" font-size="20" font-weight="700" fill="#25F4EE">06</text>
+      <text x="804" y="244" font-size="12" font-weight="700" letter-spacing="1.2" fill="#D7E2F3">ADS</text>
+      <text x="804" y="262" font-size="10.5" fill="#6E809E">funnel</text>
+    </g>
+    <g>
+      <rect x="912" y="182" width="112" height="98" rx="14" fill="#111A2E" stroke="#243252"/>
+      <text x="930" y="216" font-size="20" font-weight="700" fill="#25F4EE">07</text>
+      <text x="930" y="244" font-size="12" font-weight="700" letter-spacing="1.2" fill="#D7E2F3">REVIEWS</text>
+      <text x="930" y="262" font-size="10.5" fill="#6E809E">attribution</text>
+    </g>
+    <g>
+      <rect x="1038" y="182" width="112" height="98" rx="14" fill="#1A1020" stroke="#FE2C55" stroke-dasharray="6 5"/>
+      <text x="1056" y="216" font-size="20" font-weight="700" fill="#FE2C55">↺</text>
+      <text x="1056" y="244" font-size="12" font-weight="700" letter-spacing="1.2" fill="#FFC2CF">LOOP</text>
+      <text x="1056" y="262" font-size="10.5" fill="#A8707E">retest 7–30d</text>
+    </g>
+
+    <text x="660" y="322" font-size="13" font-weight="600" letter-spacing="2.4" fill="#6E809E">US · UK · TH · VN · ID</text>
+    <text x="1150" y="322" font-size="11" fill="#4E5F7C" text-anchor="end">scripts compute · models decide</text>
+  </g>
+</svg>

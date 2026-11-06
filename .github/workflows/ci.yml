@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Python ${{ matrix.python-version }}
+    # ubuntu-latest (26.04) has no prebuilt CPython 3.9; 22.04 still ships it
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Market configs are complete
+        run: python3 lib/market_config.py --check
+
+      - name: Regression assertions (10 groups)
+        run: python3 tests/run_asserts.py
+
+  lint-json:
+    name: JSON / Markdown sanity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every markets/*.json and core/*.json parses
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, sys
+          bad = []
+          for p in sorted(pathlib.Path('.').rglob('*.json')):
+              if '.git' in p.parts:
+                  continue
+              try:
+                  json.loads(p.read_text(encoding='utf-8'))
+              except Exception as e:
+                  bad.append(f'{p}: {e}')
+          print(f'checked {len(list(pathlib.Path(".").rglob("*.json")))} json files')
+          if bad:
+              print('\n'.join(bad)); sys.exit(1)
+          PY
